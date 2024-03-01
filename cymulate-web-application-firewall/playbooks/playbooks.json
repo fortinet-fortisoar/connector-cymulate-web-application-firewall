@@ -1,0 +1,1001 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "uuid": "075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+      "@type": "WorkflowCollection",
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "uuid": "1780bc42-43de-4e15-89c6-5c66988dc75a",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "87b10440-b0e7-4389-8dc6-1636d890ea49",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "8930f62c-5912-4783-a82a-b1b92638667a",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Report Results",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "env": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_report_results",
+                "operationTitle": "Get WAF Report Results"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the latest Web Application Firewall report results by the environment ID.",
+          "name": "Get WAF Report Results",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/87b10440-b0e7-4389-8dc6-1636d890ea49",
+          "routes": [
+            {
+              "uuid": "78d31dc3-1b13-4f5e-841e-1e630f87a1e3",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Report Results",
+              "sourceStep": "/api/3/workflow_steps/87b10440-b0e7-4389-8dc6-1636d890ea49",
+              "targetStep": "/api/3/workflow_steps/8930f62c-5912-4783-a82a-b1b92638667a"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "9326f388-49d8-4483-a67c-b327104e3595",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "8de1a526-ad3a-4731-9910-47a19221bdcb",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "10c56b30-b5cb-48f4-969f-c4bd213fe88a",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Site Results",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "env": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_site_results",
+                "operationTitle": "Get WAF Site Results"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves detailed list of the latest Web Application Firewall site results and their IDs.",
+          "name": "Get WAF Site Results",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/8de1a526-ad3a-4731-9910-47a19221bdcb",
+          "routes": [
+            {
+              "uuid": "cdf19af7-f31c-4110-9d52-926bdb5f21e9",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Site Results",
+              "sourceStep": "/api/3/workflow_steps/8de1a526-ad3a-4731-9910-47a19221bdcb",
+              "targetStep": "/api/3/workflow_steps/10c56b30-b5cb-48f4-969f-c4bd213fe88a"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "6c93a2c0-4076-40ff-b47a-6ed73a831da8",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "1f373d08-1355-4d5d-9b96-90ca9bf8c364",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "b27dba62-2c9c-4e53-9ac9-3b71d336ad17",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Payload Response",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "id": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_payload_response",
+                "operationTitle": "Get WAF Payload Response"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the Web Application Firewall response data based on the payload ID that you have specified.",
+          "name": "Get WAF Payload Response",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/1f373d08-1355-4d5d-9b96-90ca9bf8c364",
+          "routes": [
+            {
+              "uuid": "25258c6a-cc14-47aa-9ad2-f73e4c10b0f4",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Payload Response",
+              "sourceStep": "/api/3/workflow_steps/1f373d08-1355-4d5d-9b96-90ca9bf8c364",
+              "targetStep": "/api/3/workflow_steps/b27dba62-2c9c-4e53-9ac9-3b71d336ad17"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "b6b52715-192a-481d-881b-ed14d672a1e5",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "d7564e66-d633-44e3-b85e-c3a823a71778",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "aaf38a3b-0e5d-4379-aa4c-6b388e3aab24",
+              "@type": "WorkflowStep",
+              "name": "Get Technical Report Results",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "SiteID": "",
+                  "skip": "",
+                  "limit": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_technical_report_results",
+                "operationTitle": "Get Technical Report Results"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the latest technical report results based on the site ID that you have specified.",
+          "name": "Get Technical Report Results",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/d7564e66-d633-44e3-b85e-c3a823a71778",
+          "routes": [
+            {
+              "uuid": "20738185-94b1-44bc-8f34-443997259ab6",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Technical Report Results",
+              "sourceStep": "/api/3/workflow_steps/d7564e66-d633-44e3-b85e-c3a823a71778",
+              "targetStep": "/api/3/workflow_steps/aaf38a3b-0e5d-4379-aa4c-6b388e3aab24"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "aea2e6ff-7339-4f7a-bae4-e042cb837964",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "329529bd-d67a-4018-a0a7-bc471a631ecb",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "c0ffc29f-cfbe-416e-8b7f-b814d5e03388",
+              "@type": "WorkflowStep",
+              "name": "Launch WAF Assessment",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "sites": "",
+                  "templateID": "",
+                  "schedule": "",
+                  "scheduleLoop": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "launch_waf_assessment",
+                "operationTitle": "Launch WAF Assessment"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Launch a Web Application Firewall assessment based on the parameters that you have specified.",
+          "name": "Launch WAF Assessment",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/329529bd-d67a-4018-a0a7-bc471a631ecb",
+          "routes": [
+            {
+              "uuid": "2102cb8d-a173-4907-8869-bef328cfdd4c",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Launch WAF Assessment",
+              "sourceStep": "/api/3/workflow_steps/329529bd-d67a-4018-a0a7-bc471a631ecb",
+              "targetStep": "/api/3/workflow_steps/c0ffc29f-cfbe-416e-8b7f-b814d5e03388"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "eba551e3-1cb5-4e1d-8965-3508bb563349",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "21bfb224-a75e-4c1c-90c7-c231bb4a2e0e",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "41e04397-c9de-42d0-9545-f70426c24930",
+              "@type": "WorkflowStep",
+              "name": "Stop WAF Assessment",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "env": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "stop_waf_assessment",
+                "operationTitle": "Stop WAF Assessment"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Stop a Web Application Firewall assessment that is running.",
+          "name": "Stop WAF Assessment",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/21bfb224-a75e-4c1c-90c7-c231bb4a2e0e",
+          "routes": [
+            {
+              "uuid": "095a723a-3ae9-4864-9f12-7f34fd354a25",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Stop WAF Assessment",
+              "sourceStep": "/api/3/workflow_steps/21bfb224-a75e-4c1c-90c7-c231bb4a2e0e",
+              "targetStep": "/api/3/workflow_steps/41e04397-c9de-42d0-9545-f70426c24930"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "5df7e7e2-1601-4cab-acd9-8bf6120133c3",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "85665380-ed9d-4246-b843-821b2496a3ab",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "25da4ac7-1505-4070-9dea-3f7be98d72d9",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Assessment History",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "fromDate": "",
+                  "toDate": "",
+                  "env": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_assessment_history",
+                "operationTitle": "Get WAF Assessment History"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the Web Application Firewall assessment history within the date range provided in the query parameters. If a date range is not provided, the response will retrieve the history from the last 30 days.",
+          "name": "Get WAF Assessment History",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/85665380-ed9d-4246-b843-821b2496a3ab",
+          "routes": [
+            {
+              "uuid": "a16f7968-6892-4d72-b893-09001892545f",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Assessment History",
+              "sourceStep": "/api/3/workflow_steps/85665380-ed9d-4246-b843-821b2496a3ab",
+              "targetStep": "/api/3/workflow_steps/25da4ac7-1505-4070-9dea-3f7be98d72d9"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "628e2b1e-7f1f-4225-8565-0adfd0f5b0c9",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "76fe6fad-99a2-44c0-ad40-088d20d46eb5",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "c6b057aa-7a13-4e86-a866-cf03e878b499",
+              "@type": "WorkflowStep",
+              "name": "Get Technical Report Results By ID",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "id": "",
+                  "skip": "",
+                  "limit": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_technical_report_results_by_id",
+                "operationTitle": "Get Technical Report Results By ID"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the Web Application Firewall technical report results for a specific assessment.",
+          "name": "Get Technical Report Results By ID",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/76fe6fad-99a2-44c0-ad40-088d20d46eb5",
+          "routes": [
+            {
+              "uuid": "b349f3a9-54fd-40f0-968b-1573de8a10b1",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Technical Report Results By ID",
+              "sourceStep": "/api/3/workflow_steps/76fe6fad-99a2-44c0-ad40-088d20d46eb5",
+              "targetStep": "/api/3/workflow_steps/c6b057aa-7a13-4e86-a866-cf03e878b499"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "34bb1b14-a058-4de2-96f5-142aed274c25",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "1f297990-1fe0-4243-90b9-89e74ef0bc6f",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "0d272710-6772-4cc4-8ba7-dadb74d7b172",
+              "@type": "WorkflowStep",
+              "name": "Get Executive Report Results By ID",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "id": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_executive_report_results_by_id",
+                "operationTitle": "Get Executive Report Results By ID"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the Web Application Firewall executive report results for a specific assessment.",
+          "name": "Get Executive Report Results By ID",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/1f297990-1fe0-4243-90b9-89e74ef0bc6f",
+          "routes": [
+            {
+              "uuid": "b6ef1492-2663-4802-bbda-7f2da31152e5",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Executive Report Results By ID",
+              "sourceStep": "/api/3/workflow_steps/1f297990-1fe0-4243-90b9-89e74ef0bc6f",
+              "targetStep": "/api/3/workflow_steps/0d272710-6772-4cc4-8ba7-dadb74d7b172"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "d063b768-c262-4908-bcab-9f7a853f10d6",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "64f08fa9-1ff3-47c7-8368-f73ed293e0b6",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "52c505cc-3b1c-458f-b409-995a8740dc02",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Site IDs",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_site_ids",
+                "operationTitle": "Get WAF Site IDs"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the detailed list of site IDs for sites tested in Web Application Firewall assessments.",
+          "name": "Get WAF Site IDs",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/64f08fa9-1ff3-47c7-8368-f73ed293e0b6",
+          "routes": [
+            {
+              "uuid": "ffadbb5a-f7df-4ed1-858d-4e9f2c8aa557",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Site IDs",
+              "sourceStep": "/api/3/workflow_steps/64f08fa9-1ff3-47c7-8368-f73ed293e0b6",
+              "targetStep": "/api/3/workflow_steps/52c505cc-3b1c-458f-b409-995a8740dc02"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "afc69ac6-9fd0-42bf-ada5-286060093f6a",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "980f052f-2e13-4c29-a2aa-04105402e3bd",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "b0cd8af1-ff87-44ca-8265-f1c6c1a1ee1e",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Sites",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_sites",
+                "operationTitle": "Get WAF Sites"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the detailed list of sites tested in Web Application Firewall assessments.",
+          "name": "Get WAF Sites",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/980f052f-2e13-4c29-a2aa-04105402e3bd",
+          "routes": [
+            {
+              "uuid": "4474b394-b6e7-4faf-815f-78fa05d628d6",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Sites",
+              "sourceStep": "/api/3/workflow_steps/980f052f-2e13-4c29-a2aa-04105402e3bd",
+              "targetStep": "/api/3/workflow_steps/b0cd8af1-ff87-44ca-8265-f1c6c1a1ee1e"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "405965e7-47b4-4f4b-b4e9-01675ece9cf0",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "a71aeae5-98dc-4ff6-8f3a-44028efaa3b3",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "4232b3f4-35cf-445f-8ea3-b90d4156edac",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Templates",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": [],
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_templates",
+                "operationTitle": "Get WAF Templates"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the detailed list of available Web Application Firewall templates.",
+          "name": "Get WAF Templates",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/a71aeae5-98dc-4ff6-8f3a-44028efaa3b3",
+          "routes": [
+            {
+              "uuid": "8d64bd66-c60c-4217-bae6-1ed8f00c3836",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Templates",
+              "sourceStep": "/api/3/workflow_steps/a71aeae5-98dc-4ff6-8f3a-44028efaa3b3",
+              "targetStep": "/api/3/workflow_steps/4232b3f4-35cf-445f-8ea3-b90d4156edac"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "6b61827a-5bdc-4a4c-8c76-f58203f30c7c",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "6678b7ad-0605-47a3-8326-5526bb669724",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "19b2c874-4a52-4e1f-a265-591f9bf96f78",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Template By ID",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "id": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_template_by_id",
+                "operationTitle": "Get WAF Template By ID"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the specific Web Application Firewall template by its ID.",
+          "name": "Get WAF Template By ID",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/6678b7ad-0605-47a3-8326-5526bb669724",
+          "routes": [
+            {
+              "uuid": "eb6f882f-7e28-4222-8c43-2c570bf8733a",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Template By ID",
+              "sourceStep": "/api/3/workflow_steps/6678b7ad-0605-47a3-8326-5526bb669724",
+              "targetStep": "/api/3/workflow_steps/19b2c874-4a52-4e1f-a265-591f9bf96f78"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "7049d3c1-8e60-4745-acae-05004d220c81",
+          "collection": "/api/3/workflow_collections/075fa8e7-8c06-4533-a20b-61bf8dd3c1a4",
+          "steps": [
+            {
+              "uuid": "97d2436d-baf4-4510-8a04-2994a8b14122",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "9bf4e693-35ad-44a5-ae5f-2f9aded3c4c8",
+              "@type": "WorkflowStep",
+              "name": "Get WAF Assessment Status",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Cymulate Web Application Firewall - BAS",
+                "config": "''",
+                "params": {
+                  "id": ""
+                },
+                "version": "1.0.0",
+                "connector": "cymulate-web-application-firewall",
+                "operation": "get_waf_assessment_status",
+                "operationTitle": "Get WAF Assessment Status"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the Web Application Firewall assessment status by the assessment ID.",
+          "name": "Get WAF Assessment Status",
+          "tag": "#Cymulate Web Application Firewall - BAS",
+          "recordTags": [
+            "Cymulate",
+            "cymulate-web-application-firewall"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/97d2436d-baf4-4510-8a04-2994a8b14122",
+          "routes": [
+            {
+              "uuid": "692b3391-84ea-4d23-a950-37e9e5182f3d",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get WAF Assessment Status",
+              "sourceStep": "/api/3/workflow_steps/97d2436d-baf4-4510-8a04-2994a8b14122",
+              "targetStep": "/api/3/workflow_steps/9bf4e693-35ad-44a5-ae5f-2f9aded3c4c8"
+            }
+          ]
+        }
+      ],
+      "name": "Sample - Cymulate Web Application Firewall - BAS - 1.0.0",
+      "description": "The Cymulate Web Application Firewall will validate the configuration, implementation, and efficacy, to ensure that the Web Application Firewall blocks malicious payloads before they get to your Web Application. Technical reports provide analysis of the attacks and actionable mitigation guidance that help security teams to shore up their defenses against web application attacks.",
+      "visible": true,
+      "recordTags": [
+        "Cymulate",
+        "cymulate-web-application-firewall"
+      ]
+    }
+  ]
+}

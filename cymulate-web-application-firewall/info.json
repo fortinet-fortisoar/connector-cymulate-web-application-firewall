@@ -1,0 +1,405 @@
+{
+  "name": "cymulate-web-application-firewall",
+  "version": "1.0.0",
+  "label": "Cymulate Web Application Firewall - BAS",
+  "category": "Firewall and Network Protection",
+  "description": "The Cymulate Web Application Firewall will validate the configuration, implementation, and efficacy, to ensure that the Web Application Firewall blocks malicious payloads before they get to your Web Application. Technical reports provide analysis of the attacks and actionable mitigation guidance that help security teams to shore up their defenses against web application attacks.",
+  "publisher": "Fortinet",
+  "cs_approved": false,
+  "cs_compatible": true,
+  "help_online": "",
+  "icon_small_name": "small.png",
+  "icon_large_name": "large.png",
+  "ingestion_supported": false,
+  "configuration": {
+    "fields": [
+      {
+        "title": "Server URL",
+        "name": "server_url",
+        "description": "Specify the server URL to connect and perform the automated operations.",
+        "tooltip": "Specify the server URL to connect and perform the automated operations.",
+        "type": "text",
+        "visible": true,
+        "editable": true,
+        "required": true,
+        "value": "https://api.app.cymulate.com"
+      },
+      {
+        "name": "api_key",
+        "title": "API Key",
+        "description": "API key to access the endpoint to connect and perform the automated operations",
+        "tooltip": "API key to access the endpoint to connect and perform the automated operations",
+        "type": "password",
+        "editable": true,
+        "visible": true,
+        "required": true
+      },
+      {
+        "title": "Verify SSL",
+        "name": "verify_ssl",
+        "description": "Specifies whether the SSL certificate for the server is to be verified. By default, this option is selected, i.e., set to True.",
+        "tooltip": "Specifies whether the SSL certificate for the server is to be verified. By default, this option is selected, i.e., set to True.",
+        "type": "checkbox",
+        "required": false,
+        "editable": true,
+        "visible": true,
+        "value": true
+      }
+    ]
+  },
+  "operations": [
+    {
+      "operation": "get_waf_report_results",
+      "annotation": "get_waf_report_results",
+      "title": "Get WAF Report Results",
+      "description": "Retrieves the latest Web Application Firewall report results by the environment ID.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Environment ID",
+          "name": "env",
+          "type": "text",
+          "description": "Specify the environment ID. If an ID is not provided, the request will return latest report results for the default environment.",
+          "tooltip": "Specify the environment ID. If an ID is not provided, the request will return latest report results for the default environment.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_site_results",
+      "annotation": "get_waf_site_results",
+      "title": "Get WAF Site Results",
+      "description": "Retrieves detailed list of the latest Web Application Firewall site results and their IDs.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Environment ID",
+          "name": "env",
+          "type": "text",
+          "description": "Specify the environment ID. If an ID is not provided, the request will return latest results for the default environment.",
+          "tooltip": "Specify the environment ID. If an ID is not provided, the request will return latest results for the default environment.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_payload_response",
+      "annotation": "get_waf_payload_response",
+      "title": "Get WAF Payload Response",
+      "description": "Retrieves the Web Application Firewall response data based on the payload ID that you have specified.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Payload ID",
+          "name": "id",
+          "type": "text",
+          "description": "Specify the payload ID",
+          "tooltip": "Specify the payload ID",
+          "required": true,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_technical_report_results",
+      "annotation": "get_technical_report_results",
+      "title": "Get Technical Report Results",
+      "description": "Retrieves the latest technical report results based on the site ID that you have specified.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Site ID",
+          "name": "SiteID",
+          "type": "text",
+          "description": "Specify the site ID",
+          "tooltip": "Specify the site ID",
+          "required": true,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Skip",
+          "name": "skip",
+          "type": "integer",
+          "description": "Specify the index of the first item to be returned by this operation. This parameter is useful if you want to get a subset of records, say records starting from the 10th index.",
+          "tooltip": "Specify the index of the first item to be returned by this operation. This parameter is useful if you want to get a subset of records, say records starting from the 10th index.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Limit",
+          "name": "limit",
+          "type": "integer",
+          "description": "Specify the maximum number of results that this operation should return. The minimum supported value is 1000 and the maximum supported value is 10000.",
+          "tooltip": "Specify the maximum number of results that this operation should return. The minimum supported value is 1000 and the maximum supported value is 10000.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "launch_waf_assessment",
+      "annotation": "launch_waf_assessment",
+      "title": "Launch WAF Assessment",
+      "description": "Launch a Web Application Firewall assessment based on the parameters that you have specified.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Sites",
+          "name": "sites",
+          "type": "text",
+          "description": "Specify the comma separated values of urls. eg: https://example1.com,https://example2.com",
+          "tooltip": "Specify the comma separated values of urls. eg: https://example1.com,https://example2.com",
+          "placeholder": "https://example1.com,https://example2.com",
+          "required": true,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Template ID",
+          "name": "templateID",
+          "type": "text",
+          "description": "Specify the template ID.",
+          "tooltip": "Specify the template ID.",
+          "required": true,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Schedule",
+          "name": "schedule",
+          "type": "datetime",
+          "description": "Specify the datetime of the schedule.",
+          "tooltip": "Specify the datetime of the schedule.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Schedule Loop",
+          "name": "scheduleLoop",
+          "type": "text",
+          "description": "Specify the schedule loop. eg: one-time",
+          "tooltip": "Specify the schedule loop. eg: one-time",
+          "placeholder": "one-time",
+          "required": true,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "stop_waf_assessment",
+      "annotation": "stop_waf_assessment",
+      "title": "Stop WAF Assessment",
+      "description": "Stop a Web Application Firewall assessment that is running.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Environment ID",
+          "name": "env",
+          "type": "text",
+          "description": "Specify the environment ID. If an ID is not provided, the most recently launched assessment will be stopped.",
+          "tooltip": "Specify the environment ID. If an ID is not provided, the most recently launched assessment will be stopped.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_assessment_history",
+      "annotation": "get_waf_assessment_history",
+      "title": "Get WAF Assessment History",
+      "description": "Retrieves the Web Application Firewall assessment history within the date range provided in the query parameters. If a date range is not provided, the response will retrieve the history from the last 30 days.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "From Date",
+          "name": "fromDate",
+          "type": "text",
+          "description": "Specify the start datetime to fetch the Web Application Firewall assessments.",
+          "tooltip": "Specify the start datetime to fetch the Web Application Firewall assessments.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "To Date",
+          "name": "toDate",
+          "type": "text",
+          "description": "Specify the end datetime to fetch the Web Application Firewall assessments.",
+          "tooltip": "Specify the end datetime to fetch the Web Application Firewall assessments.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Environment ID",
+          "name": "env",
+          "type": "text",
+          "description": "Specify the environment ID. If an ID is not provided, the results will show data from the Default environment.",
+          "tooltip": "Specify the environment ID. If an ID is not provided, the results will show data from the Default environment.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_technical_report_results_by_id",
+      "annotation": "get_technical_report_results_by_id",
+      "title": "Get Technical Report Results By ID",
+      "description": "Retrieves the Web Application Firewall technical report results for a specific assessment.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Assessment ID",
+          "name": "id",
+          "type": "text",
+          "description": "Specify the assessment ID",
+          "tooltip": "Specify the assessment ID",
+          "required": true,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Skip",
+          "name": "skip",
+          "type": "integer",
+          "description": "Specify the index of the first item to be returned by this operation. This parameter is useful if you want to get a subset of records, say records starting from the 10th index.",
+          "tooltip": "Specify the index of the first item to be returned by this operation. This parameter is useful if you want to get a subset of records, say records starting from the 10th index.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        },
+        {
+          "title": "Limit",
+          "name": "limit",
+          "type": "integer",
+          "description": "Specify the maximum number of records that this operation should return. By default it will return all records.",
+          "tooltip": "Specify the maximum number of records that this operation should return. By default it will return all records.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_executive_report_results_by_id",
+      "annotation": "get_executive_report_results_by_id",
+      "title": "Get Executive Report Results By ID",
+      "description": "Retrieves the Web Application Firewall executive report results for a specific assessment.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Assessment ID",
+          "name": "id",
+          "type": "text",
+          "description": "Specify the assessment ID",
+          "tooltip": "Specify the assessment ID",
+          "required": true,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_site_ids",
+      "annotation": "get_waf_site_ids",
+      "title": "Get WAF Site IDs",
+      "description": "Retrieves the detailed list of site IDs for sites tested in Web Application Firewall assessments.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_sites",
+      "annotation": "get_waf_sites",
+      "title": "Get WAF Sites",
+      "description": "Retrieves the detailed list of sites tested in Web Application Firewall assessments.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_templates",
+      "annotation": "get_waf_templates",
+      "title": "Get WAF Templates",
+      "description": "Retrieves the detailed list of available Web Application Firewall templates.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_template_by_id",
+      "annotation": "get_waf_template_by_id",
+      "title": "Get WAF Template By ID",
+      "description": "Retrieves the specific Web Application Firewall template by its ID.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Template ID",
+          "name": "id",
+          "type": "text",
+          "description": "Specify the template ID",
+          "tooltip": "Specify the template ID",
+          "required": true,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_waf_assessment_status",
+      "annotation": "get_waf_assessment_status",
+      "title": "Get WAF Assessment Status",
+      "description": "Retrieves the Web Application Firewall assessment status by the assessment ID.",
+      "category": "investigation",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Assessment ID",
+          "name": "id",
+          "type": "text",
+          "description": "Specify the assessment ID. If an ID is not provided, the request will return the latest run assessment.",
+          "tooltip": "Specify the assessment ID. If an ID is not provided, the request will return the latest run assessment.",
+          "required": false,
+          "visible": true,
+          "editable": true
+        }
+      ],
+      "output_schema": {}
+    }
+  ]
+}
