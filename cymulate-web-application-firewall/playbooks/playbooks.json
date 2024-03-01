@@ -2,16 +2,16 @@
   "type": "workflow_collections",
   "data": [
     {
-      "uuid": "e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+      "uuid": "4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
       "@type": "WorkflowCollection",
       "workflows": [
         {
           "@type": "Workflow",
-          "uuid": "4786b427-c52f-42c6-98c9-b64a90d2ced4",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "e2e57942-da4a-4db8-8400-6cc0cc45708b",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "48192fe2-2f7a-4d33-a54d-fb7b0f9d348e",
+              "uuid": "76224f41-1943-48b4-bcb5-1199abfe2f1c",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -28,7 +28,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "bdeb9d9f-7c34-44f4-ad4b-143d51c80698",
+              "uuid": "9c4974c7-a43d-430c-9d86-194882a19ec9",
               "@type": "WorkflowStep",
               "name": "Get WAF Report Results",
               "description": null,
@@ -62,26 +62,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/48192fe2-2f7a-4d33-a54d-fb7b0f9d348e",
+          "triggerStep": "/api/3/workflow_steps/76224f41-1943-48b4-bcb5-1199abfe2f1c",
           "routes": [
             {
-              "uuid": "f9d3258b-b1d2-4801-a9f5-ede8ca7cded0",
+              "uuid": "c2d18e30-98e9-4a07-a463-d35bc3592cc6",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Report Results",
-              "sourceStep": "/api/3/workflow_steps/48192fe2-2f7a-4d33-a54d-fb7b0f9d348e",
-              "targetStep": "/api/3/workflow_steps/bdeb9d9f-7c34-44f4-ad4b-143d51c80698"
+              "sourceStep": "/api/3/workflow_steps/76224f41-1943-48b4-bcb5-1199abfe2f1c",
+              "targetStep": "/api/3/workflow_steps/9c4974c7-a43d-430c-9d86-194882a19ec9"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "96e251e4-f762-4c77-a66b-83da95d80842",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "46cd4399-8311-49b0-95f9-100cf764f609",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "a9dfe35d-fb5e-4b90-a6a3-58a70c51faa3",
+              "uuid": "ddfb35c3-0275-4c47-b801-4b213306e2ba",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -98,7 +98,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "bb2e3d5b-4e6b-4f16-bc1f-b5b58ecd5265",
+              "uuid": "7b0e6dc1-6c46-4c0f-9c2c-eac840b26b27",
               "@type": "WorkflowStep",
               "name": "Get WAF Site Results",
               "description": null,
@@ -132,26 +132,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/a9dfe35d-fb5e-4b90-a6a3-58a70c51faa3",
+          "triggerStep": "/api/3/workflow_steps/ddfb35c3-0275-4c47-b801-4b213306e2ba",
           "routes": [
             {
-              "uuid": "20d6d00e-8e9e-4636-92a4-8347b8cb6c82",
+              "uuid": "213c3358-2a55-4f16-bdec-a99adf46303f",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Site Results",
-              "sourceStep": "/api/3/workflow_steps/a9dfe35d-fb5e-4b90-a6a3-58a70c51faa3",
-              "targetStep": "/api/3/workflow_steps/bb2e3d5b-4e6b-4f16-bc1f-b5b58ecd5265"
+              "sourceStep": "/api/3/workflow_steps/ddfb35c3-0275-4c47-b801-4b213306e2ba",
+              "targetStep": "/api/3/workflow_steps/7b0e6dc1-6c46-4c0f-9c2c-eac840b26b27"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "5bcca894-494b-4ad0-8a84-1c657065a1e8",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "c6b007cc-b1ac-49dc-8041-2d3bff5dd9bf",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "7c3cb19d-68cd-4c92-880e-70028991d8d9",
+              "uuid": "064a5488-2fad-461a-b2e6-a3667e3a34f5",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -168,7 +168,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "f21f5ea6-afc3-4405-8603-0917ec31829b",
+              "uuid": "4fda01b9-b959-470c-859a-59f9b57c63be",
               "@type": "WorkflowStep",
               "name": "Get WAF Payload Response",
               "description": null,
@@ -202,26 +202,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/7c3cb19d-68cd-4c92-880e-70028991d8d9",
+          "triggerStep": "/api/3/workflow_steps/064a5488-2fad-461a-b2e6-a3667e3a34f5",
           "routes": [
             {
-              "uuid": "5e516e42-530a-4c07-9d0f-f89713a49d70",
+              "uuid": "7ddf35bc-0625-4b1a-9d4c-a4a5d6f82eaf",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Payload Response",
-              "sourceStep": "/api/3/workflow_steps/7c3cb19d-68cd-4c92-880e-70028991d8d9",
-              "targetStep": "/api/3/workflow_steps/f21f5ea6-afc3-4405-8603-0917ec31829b"
+              "sourceStep": "/api/3/workflow_steps/064a5488-2fad-461a-b2e6-a3667e3a34f5",
+              "targetStep": "/api/3/workflow_steps/4fda01b9-b959-470c-859a-59f9b57c63be"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "f4b2caeb-77dd-4ae3-8fff-be5c39c94b1f",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "213e2a7c-4e46-4341-9e89-73f08a0585c4",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "4f85eaa0-ac5d-4d24-b087-802f2ba42afc",
+              "uuid": "835d25eb-e55e-4283-99ef-6cb5b4caf6f9",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -238,7 +238,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "244a8cad-5096-43ee-aed8-f2366e782a01",
+              "uuid": "85d3004f-a040-4933-b879-c3f94ab12bcb",
               "@type": "WorkflowStep",
               "name": "Get Technical Report Results",
               "description": null,
@@ -274,26 +274,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/4f85eaa0-ac5d-4d24-b087-802f2ba42afc",
+          "triggerStep": "/api/3/workflow_steps/835d25eb-e55e-4283-99ef-6cb5b4caf6f9",
           "routes": [
             {
-              "uuid": "1e5dce82-cecf-46be-a2e1-8fc8cce0fb83",
+              "uuid": "f9d00849-a194-415b-87c6-96ad34af9638",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Technical Report Results",
-              "sourceStep": "/api/3/workflow_steps/4f85eaa0-ac5d-4d24-b087-802f2ba42afc",
-              "targetStep": "/api/3/workflow_steps/244a8cad-5096-43ee-aed8-f2366e782a01"
+              "sourceStep": "/api/3/workflow_steps/835d25eb-e55e-4283-99ef-6cb5b4caf6f9",
+              "targetStep": "/api/3/workflow_steps/85d3004f-a040-4933-b879-c3f94ab12bcb"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "9473533a-854f-4341-9b42-251b7ca75965",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "830277fe-022e-4228-a63e-03313948336a",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "5eabc89a-2ff1-46c4-9b49-45d7f4d92b2c",
+              "uuid": "01e88905-6248-4353-bde0-a4a7cfd9cf0f",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -310,7 +310,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "80c47075-9166-4b46-a91c-eef41448bcb3",
+              "uuid": "5be1006a-b770-421e-bb9b-5e3c1400eec6",
               "@type": "WorkflowStep",
               "name": "Launch WAF Assessment",
               "description": null,
@@ -347,26 +347,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/5eabc89a-2ff1-46c4-9b49-45d7f4d92b2c",
+          "triggerStep": "/api/3/workflow_steps/01e88905-6248-4353-bde0-a4a7cfd9cf0f",
           "routes": [
             {
-              "uuid": "714072ec-5fc1-4f56-ab23-3bf06562f9dd",
+              "uuid": "3d7a4b24-6029-429a-828d-b8e46d773662",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Launch WAF Assessment",
-              "sourceStep": "/api/3/workflow_steps/5eabc89a-2ff1-46c4-9b49-45d7f4d92b2c",
-              "targetStep": "/api/3/workflow_steps/80c47075-9166-4b46-a91c-eef41448bcb3"
+              "sourceStep": "/api/3/workflow_steps/01e88905-6248-4353-bde0-a4a7cfd9cf0f",
+              "targetStep": "/api/3/workflow_steps/5be1006a-b770-421e-bb9b-5e3c1400eec6"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "6343e0b9-67b0-400a-8811-c3cea4fe62fb",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "8878a042-a9e1-4163-b034-82f0ff0e9b3c",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "2bfdbabf-5eb1-422c-9f92-81c93b7586bc",
+              "uuid": "809c8d64-d543-4d1f-b4c8-62f1ca254a29",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -383,7 +383,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "36edad5a-805e-44ed-a8ef-6f357ea0efe0",
+              "uuid": "1caf2a20-7080-4995-9a26-7bb9de8a0e41",
               "@type": "WorkflowStep",
               "name": "Stop WAF Assessment",
               "description": null,
@@ -417,26 +417,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/2bfdbabf-5eb1-422c-9f92-81c93b7586bc",
+          "triggerStep": "/api/3/workflow_steps/809c8d64-d543-4d1f-b4c8-62f1ca254a29",
           "routes": [
             {
-              "uuid": "7a457781-5123-4f82-b37e-4e5cb4696e14",
+              "uuid": "dda03b52-9711-41b5-9109-62c1e5996f16",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Stop WAF Assessment",
-              "sourceStep": "/api/3/workflow_steps/2bfdbabf-5eb1-422c-9f92-81c93b7586bc",
-              "targetStep": "/api/3/workflow_steps/36edad5a-805e-44ed-a8ef-6f357ea0efe0"
+              "sourceStep": "/api/3/workflow_steps/809c8d64-d543-4d1f-b4c8-62f1ca254a29",
+              "targetStep": "/api/3/workflow_steps/1caf2a20-7080-4995-9a26-7bb9de8a0e41"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "f57335b7-8d77-47d7-9957-9d6f7898087a",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "cb85f476-a057-4f21-baf7-a6e92e8fe419",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "05b56696-a09a-4e42-ab4e-30f682f857f2",
+              "uuid": "f7659efa-f42d-44cf-931b-f774eeacc7c8",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -453,7 +453,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "c1bfd57e-a0b5-4096-b823-b4f9eb7f74ad",
+              "uuid": "65cb906d-b35e-4b23-b1bd-536a57a25514",
               "@type": "WorkflowStep",
               "name": "Get WAF Assessment History",
               "description": null,
@@ -489,26 +489,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/05b56696-a09a-4e42-ab4e-30f682f857f2",
+          "triggerStep": "/api/3/workflow_steps/f7659efa-f42d-44cf-931b-f774eeacc7c8",
           "routes": [
             {
-              "uuid": "80df49df-66b9-42ac-b100-b2a0688d27ea",
+              "uuid": "f129b1e0-fe36-433e-8693-e16385d08c9f",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Assessment History",
-              "sourceStep": "/api/3/workflow_steps/05b56696-a09a-4e42-ab4e-30f682f857f2",
-              "targetStep": "/api/3/workflow_steps/c1bfd57e-a0b5-4096-b823-b4f9eb7f74ad"
+              "sourceStep": "/api/3/workflow_steps/f7659efa-f42d-44cf-931b-f774eeacc7c8",
+              "targetStep": "/api/3/workflow_steps/65cb906d-b35e-4b23-b1bd-536a57a25514"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "75fc18c6-77b8-4b73-a6ff-567b2c54c430",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "db31474c-a3df-41f2-b15b-309da8b456bd",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "1c8f8dee-0cf4-4e72-8f55-38184aa46b31",
+              "uuid": "59003781-55fb-412e-84b6-b2f6ecf2dc88",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -525,9 +525,9 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "2cca1f6c-a9e9-45d9-9c6e-eb333d927196",
+              "uuid": "3437f605-405e-45bb-870a-94ca1698bcf1",
               "@type": "WorkflowStep",
-              "name": "Get Technical Report Results By ID",
+              "name": "Get Technical Report Results By Assessment ID",
               "description": null,
               "status": null,
               "arguments": {
@@ -541,7 +541,7 @@
                 "version": "1.0.0",
                 "connector": "cymulate-web-application-firewall",
                 "operation": "get_technical_report_results_by_id",
-                "operationTitle": "Get Technical Report Results By ID"
+                "operationTitle": "Get Technical Report Results By Assessment ID"
               },
               "left": "188",
               "top": "120",
@@ -550,7 +550,7 @@
           ],
           "triggerLimit": null,
           "description": "Retrieves the Web Application Firewall technical report results for a specific assessment.",
-          "name": "Get Technical Report Results By ID",
+          "name": "Get Technical Report Results By Assessment ID",
           "tag": "#Cymulate Web Application Firewall - BAS",
           "recordTags": [
             "Cymulate",
@@ -561,26 +561,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/1c8f8dee-0cf4-4e72-8f55-38184aa46b31",
+          "triggerStep": "/api/3/workflow_steps/59003781-55fb-412e-84b6-b2f6ecf2dc88",
           "routes": [
             {
-              "uuid": "37fe52d7-9dea-46e3-809a-363ad1948c70",
+              "uuid": "ffea03fc-f8c5-4d04-8e8a-30e773b44ef9",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
-              "name": "Start-> Get Technical Report Results By ID",
-              "sourceStep": "/api/3/workflow_steps/1c8f8dee-0cf4-4e72-8f55-38184aa46b31",
-              "targetStep": "/api/3/workflow_steps/2cca1f6c-a9e9-45d9-9c6e-eb333d927196"
+              "name": "Start-> Get Technical Report Results By Assessment ID",
+              "sourceStep": "/api/3/workflow_steps/59003781-55fb-412e-84b6-b2f6ecf2dc88",
+              "targetStep": "/api/3/workflow_steps/3437f605-405e-45bb-870a-94ca1698bcf1"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "780ae358-1e28-42e4-9644-aec3c0dbd8cd",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "e804fc8d-0503-499d-a911-17b1c6e79235",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "d10e7a32-7429-4565-8bb7-1423947158db",
+              "uuid": "73aa4afe-a45d-47be-b2fa-0d4fa612757e",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -597,9 +597,9 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "8228b693-9537-4068-94c3-21822503efe4",
+              "uuid": "2850e404-f2c9-4096-8d0d-a6f327fd9560",
               "@type": "WorkflowStep",
-              "name": "Get Executive Report Results By ID",
+              "name": "Get Executive Report Results By Assessment ID",
               "description": null,
               "status": null,
               "arguments": {
@@ -611,7 +611,7 @@
                 "version": "1.0.0",
                 "connector": "cymulate-web-application-firewall",
                 "operation": "get_executive_report_results_by_id",
-                "operationTitle": "Get Executive Report Results By ID"
+                "operationTitle": "Get Executive Report Results By Assessment ID"
               },
               "left": "188",
               "top": "120",
@@ -620,7 +620,7 @@
           ],
           "triggerLimit": null,
           "description": "Retrieves the Web Application Firewall executive report results for a specific assessment.",
-          "name": "Get Executive Report Results By ID",
+          "name": "Get Executive Report Results By Assessment ID",
           "tag": "#Cymulate Web Application Firewall - BAS",
           "recordTags": [
             "Cymulate",
@@ -631,26 +631,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/d10e7a32-7429-4565-8bb7-1423947158db",
+          "triggerStep": "/api/3/workflow_steps/73aa4afe-a45d-47be-b2fa-0d4fa612757e",
           "routes": [
             {
-              "uuid": "8c767bd0-9bcb-4628-aef6-ff77787e2ee9",
+              "uuid": "d4c54d59-cb94-43c2-adc4-33ad33517d7a",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
-              "name": "Start-> Get Executive Report Results By ID",
-              "sourceStep": "/api/3/workflow_steps/d10e7a32-7429-4565-8bb7-1423947158db",
-              "targetStep": "/api/3/workflow_steps/8228b693-9537-4068-94c3-21822503efe4"
+              "name": "Start-> Get Executive Report Results By Assessment ID",
+              "sourceStep": "/api/3/workflow_steps/73aa4afe-a45d-47be-b2fa-0d4fa612757e",
+              "targetStep": "/api/3/workflow_steps/2850e404-f2c9-4096-8d0d-a6f327fd9560"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "ebe17968-a830-4f3f-a8fa-aec2620ed9ad",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "c49eaf50-fad1-4713-9885-4918982fc6ce",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "4b231e41-6397-4e59-9fa1-8d682812c17f",
+              "uuid": "aa06261f-11b1-40d3-aecf-3e094c00cd9b",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -667,7 +667,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "34046824-5ef5-4492-8cfb-aecb01546df7",
+              "uuid": "8bcfa4e5-5f47-4e64-a667-c4b8861c2854",
               "@type": "WorkflowStep",
               "name": "Get WAF Site IDs",
               "description": null,
@@ -699,26 +699,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/4b231e41-6397-4e59-9fa1-8d682812c17f",
+          "triggerStep": "/api/3/workflow_steps/aa06261f-11b1-40d3-aecf-3e094c00cd9b",
           "routes": [
             {
-              "uuid": "7e022834-aaa7-4aa8-9af7-a662e0f49c5f",
+              "uuid": "807f0713-f990-455a-847e-4120a1f72155",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Site IDs",
-              "sourceStep": "/api/3/workflow_steps/4b231e41-6397-4e59-9fa1-8d682812c17f",
-              "targetStep": "/api/3/workflow_steps/34046824-5ef5-4492-8cfb-aecb01546df7"
+              "sourceStep": "/api/3/workflow_steps/aa06261f-11b1-40d3-aecf-3e094c00cd9b",
+              "targetStep": "/api/3/workflow_steps/8bcfa4e5-5f47-4e64-a667-c4b8861c2854"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "8561fba8-0fa5-46a8-bd1e-515edfbbd2af",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "dad8c03e-bb3b-490c-9ede-8829ee34708c",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "e43c5922-0242-4456-9ee1-aa29af78aa71",
+              "uuid": "28696291-3da3-41a6-8e4d-a4051462baa5",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -735,7 +735,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "7b277326-1e7c-4d31-9379-c9b6e23cf550",
+              "uuid": "3f33c4be-56c7-47bd-abd1-714ec249188e",
               "@type": "WorkflowStep",
               "name": "Get WAF Sites",
               "description": null,
@@ -767,26 +767,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/e43c5922-0242-4456-9ee1-aa29af78aa71",
+          "triggerStep": "/api/3/workflow_steps/28696291-3da3-41a6-8e4d-a4051462baa5",
           "routes": [
             {
-              "uuid": "4fb3fd2f-172d-4abd-b1b8-9e198819ffa5",
+              "uuid": "3224cd69-2a4f-4709-9494-e40cd08edae3",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Sites",
-              "sourceStep": "/api/3/workflow_steps/e43c5922-0242-4456-9ee1-aa29af78aa71",
-              "targetStep": "/api/3/workflow_steps/7b277326-1e7c-4d31-9379-c9b6e23cf550"
+              "sourceStep": "/api/3/workflow_steps/28696291-3da3-41a6-8e4d-a4051462baa5",
+              "targetStep": "/api/3/workflow_steps/3f33c4be-56c7-47bd-abd1-714ec249188e"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "ca1a7c10-bbf4-42e0-8c93-b437809c0729",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "fa25cd34-0144-48dd-a575-e041b411a15f",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "4bc78f6b-55ee-457f-9ce1-d800e321db35",
+              "uuid": "3fa3d3a9-87a5-4e96-a229-568eb0777cd0",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -803,7 +803,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "9c586568-7b35-448c-90c4-1b9f1f711f9d",
+              "uuid": "0228d6c5-8c52-4067-bf63-6ca90689efc5",
               "@type": "WorkflowStep",
               "name": "Get WAF Templates",
               "description": null,
@@ -835,26 +835,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/4bc78f6b-55ee-457f-9ce1-d800e321db35",
+          "triggerStep": "/api/3/workflow_steps/3fa3d3a9-87a5-4e96-a229-568eb0777cd0",
           "routes": [
             {
-              "uuid": "42692671-228e-4cf7-b6e5-f7bfd8213ada",
+              "uuid": "178cfffe-c968-4a92-b29b-7053072e3b3b",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Templates",
-              "sourceStep": "/api/3/workflow_steps/4bc78f6b-55ee-457f-9ce1-d800e321db35",
-              "targetStep": "/api/3/workflow_steps/9c586568-7b35-448c-90c4-1b9f1f711f9d"
+              "sourceStep": "/api/3/workflow_steps/3fa3d3a9-87a5-4e96-a229-568eb0777cd0",
+              "targetStep": "/api/3/workflow_steps/0228d6c5-8c52-4067-bf63-6ca90689efc5"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "c9745c78-d026-4fdd-be10-185b4d7db088",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "605be83e-c1ec-4641-9579-193ae00c01eb",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "d3f4a71a-a112-48ca-9bbe-50903f1d0fe1",
+              "uuid": "77b892b0-60b4-4eb1-bfc8-9768f5002687",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -871,7 +871,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "74e7da9f-8eb5-4933-9ace-9c4d35fcddd6",
+              "uuid": "efdbf1d0-5bc4-42d5-8df9-bbcc73d44d08",
               "@type": "WorkflowStep",
               "name": "Get WAF Template By ID",
               "description": null,
@@ -905,26 +905,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/d3f4a71a-a112-48ca-9bbe-50903f1d0fe1",
+          "triggerStep": "/api/3/workflow_steps/77b892b0-60b4-4eb1-bfc8-9768f5002687",
           "routes": [
             {
-              "uuid": "457b8c99-ae06-4bd3-bd68-b4d1d1d8dd2e",
+              "uuid": "dd6f3076-a296-47d7-b21b-68df9c0ec957",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Template By ID",
-              "sourceStep": "/api/3/workflow_steps/d3f4a71a-a112-48ca-9bbe-50903f1d0fe1",
-              "targetStep": "/api/3/workflow_steps/74e7da9f-8eb5-4933-9ace-9c4d35fcddd6"
+              "sourceStep": "/api/3/workflow_steps/77b892b0-60b4-4eb1-bfc8-9768f5002687",
+              "targetStep": "/api/3/workflow_steps/efdbf1d0-5bc4-42d5-8df9-bbcc73d44d08"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "b87aa8aa-0c99-4d63-ac60-353e54d7a9d6",
-          "collection": "/api/3/workflow_collections/e9407d51-fc62-458e-b8cb-4081de3f5ee9",
+          "uuid": "84cc043e-94bc-4048-b7f9-6d4a6d996478",
+          "collection": "/api/3/workflow_collections/4bd2f73c-6141-44f2-a66c-8dba08c0b8b3",
           "steps": [
             {
-              "uuid": "12e43b97-0f19-48d0-8878-9b6bf36da020",
+              "uuid": "ea0cf609-1108-4387-ab92-fc1f039b332d",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -941,7 +941,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "cd4e659c-5278-4a6f-afc1-d2147e3efc85",
+              "uuid": "0f486690-3cc4-48da-91ef-504108629216",
               "@type": "WorkflowStep",
               "name": "Get WAF Assessment Status",
               "description": null,
@@ -975,16 +975,16 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/12e43b97-0f19-48d0-8878-9b6bf36da020",
+          "triggerStep": "/api/3/workflow_steps/ea0cf609-1108-4387-ab92-fc1f039b332d",
           "routes": [
             {
-              "uuid": "54411d62-9773-4299-87b7-72b9cede1537",
+              "uuid": "63e272b7-ed79-4df3-abcc-f20333b7ee30",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get WAF Assessment Status",
-              "sourceStep": "/api/3/workflow_steps/12e43b97-0f19-48d0-8878-9b6bf36da020",
-              "targetStep": "/api/3/workflow_steps/cd4e659c-5278-4a6f-afc1-d2147e3efc85"
+              "sourceStep": "/api/3/workflow_steps/ea0cf609-1108-4387-ab92-fc1f039b332d",
+              "targetStep": "/api/3/workflow_steps/0f486690-3cc4-48da-91ef-504108629216"
             }
           ]
         }
