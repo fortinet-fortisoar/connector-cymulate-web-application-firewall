@@ -60,16 +60,14 @@ def get_params(params):
     for k, v in params.items():
         if v is None or v == "":
             continue
-        if k in {"schedule", "fromDate", "toDate"}:
-            new_params[k] = convert_date_time(v)
+        if k == "schedule":
+            v = datetime.strptime(v, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%Y-%m-%d %H:%M:%S")
+        if k in {"fromDate", "toDate"}:
+            v = datetime.strptime(v, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%Y-%m-%d")
         elif k == "sites":
-            new_params[k] = [x.strip() for x in str(v).split(",")]
+            v = [x.strip() for x in str(v).split(",")]
         new_params[k] = v
     return new_params
-
-
-def convert_date_time(str_date):
-    return datetime.strptime(str_date, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%Y-%m-%d")
 
 
 def get_waf_report_results(config, params):

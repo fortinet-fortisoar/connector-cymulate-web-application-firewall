@@ -130,7 +130,7 @@
           "editable": true
         },
         {
-          "title": "Skip",
+          "title": "Offset",
           "name": "skip",
           "type": "integer",
           "description": "Specify the index of the first item to be returned by this operation. This parameter is useful if you want to get a subset of records, say records starting from the 10th index.",
@@ -237,9 +237,9 @@
         {
           "title": "From Date",
           "name": "fromDate",
-          "type": "text",
-          "description": "Specify the start datetime to fetch the Web Application Firewall assessments.",
-          "tooltip": "Specify the start datetime to fetch the Web Application Firewall assessments.",
+          "type": "datetime",
+          "description": "Specify the start date to fetch the Web Application Firewall assessments.",
+          "tooltip": "Specify the start date to fetch the Web Application Firewall assessments.",
           "required": false,
           "visible": true,
           "editable": true
@@ -247,9 +247,9 @@
         {
           "title": "To Date",
           "name": "toDate",
-          "type": "text",
-          "description": "Specify the end datetime to fetch the Web Application Firewall assessments.",
-          "tooltip": "Specify the end datetime to fetch the Web Application Firewall assessments.",
+          "type": "datetime",
+          "description": "Specify the end date to fetch the Web Application Firewall assessments.",
+          "tooltip": "Specify the end date to fetch the Web Application Firewall assessments.",
           "required": false,
           "visible": true,
           "editable": true
@@ -286,7 +286,7 @@
           "editable": true
         },
         {
-          "title": "Skip",
+          "title": "Offset",
           "name": "skip",
           "type": "integer",
           "description": "Specify the index of the first item to be returned by this operation. This parameter is useful if you want to get a subset of records, say records starting from the 10th index.",
