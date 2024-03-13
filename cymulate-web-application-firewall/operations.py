@@ -155,7 +155,7 @@ def get_waf_assessment_status(config, params):
 
 
 def check_health_ex(config):
-    get_waf_report_results(config, {})
+    get_waf_templates(config, {})
     return True
 
 
